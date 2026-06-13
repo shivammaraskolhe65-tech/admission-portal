@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #F8FAFC; }
+        .header { background-color: #1E40AF; color: white; padding: 15px; text-align: center; }
+        .sidebar { width: 220px; height: 100vh; background-color: #0F172A; position: fixed; padding-top: 20px; }
+        .sidebar a { display: block; color: white; padding: 12px; text-decoration: none; }
+        .sidebar a:hover { background-color: #1abc9c; }
+        .main { margin-left: 230px; padding: 20px; }
+        .card { background-color: #8fdef1c7; border: 1px solid #000000; border-radius: 10px; padding: 15px; width: 80%; }
+        input[type="text"] { width: 90%; padding: 8px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 8px 15px; background-color: #570244; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #16a085; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Welcome Student - Profile</h2>
+    </div>
+
+    <div class="sidebar">
+        <a href="dashboard">Home</a>
+        <a href="profile_page.html">My Profile</a>
+        <a href="application.jsp">Application Form</a>
+        <a href="LogoutServlet">Logout</a>
+    </div>
+
+   <div class="main">
+        <div class="card">
+            <h4>Personal Details :</h4>
+            <form action="#">
+                <label>Aadhaar Number :</label><br>
+                <input type="text" name="adhar" placeholder="Enter Aadhaar Number"><br>
+                
+                <label>Applicant Full Name :</label><br>
+                <input type="text" placeholder="Name"><br>
+                
+                <label>Parent's/ Guardian Phone No. :</label><br>
+                <input type="text" placeholder="Phone No."><br>
+                
+                <label>Address:</label><br>
+                <input type="text" placeholder="Enter Address"><br><br>
+                
+                <button type="button">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
